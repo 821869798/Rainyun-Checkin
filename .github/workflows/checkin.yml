@@ -1,5 +1,5 @@
 # 文件: .github/workflows/ci.yml
-name: CI Pipeline  # Workflow 名称
+name: Checkin
 
 # 触发条件
 on:
@@ -30,4 +30,5 @@ jobs:
       env:
         RAINYUN_USER: ${{ secrets.RAINYUN_USER }}
         RAINYUN_PWD: ${{ secrets.RAINYUN_PWD }}
+        IS_NOT_WAIT: true
         
